@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* reset code and common code start here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* font-family: 'Italianno', cursive; */
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width:120rem;
+    max-width: 100%;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4 ;
+}
+.text-justify{
+    text-align: justify;
+}
+.section-heading{
+    font-size: 8rem;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+}
+.text-white{
+    color:#fff;
+}
+.section-center{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+
+}
+.btn{
+    background-color: rgb(230, 159, 8);
+    border:none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem 0;
+    text-transform: uppercase;
+}
+/* reset code and common code start here */
+
+
+/*/ header start here */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color:white;
+    padding: 2rem 1rem;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    min-height: 5vh;
+}
+.logo-figure{
+    border: 1px solid #fff;
+}
+.logo{
+    font-size: 4rem;
+}
+#menu-icon{
+    display: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    transition: all 0.4s;
+    
+}
+nav li:last-child{
+    margin-right:0;
+}
+nav li:hover{
+    background-color: #1913d5;
+    border-radius: 0.6rem;;
+}
+.nav-link{
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+/*/ header end here */
+
+/* responsive start here */
+
+/*/ banner section start here */
+
+#blog-banner-section{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+#blog-banner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+    text-align: center;
+}
+.banner-heading{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: white;
+}
+#blog-banner-section aside{
+    flex-basis: 50%;
+    text-align: right;
+}
+.banner-description{
+    font-size: 1.8rem;
+}
+.banner-img{
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid
+}
+
+/*/ banner section end here */
+
+/*# blog about start here */
+
+    #blog-about{
+        min-height: 95vh;
+        padding: 5rem 1rem;
+        background-color: #4c4c4c;
+    }
+    .card-container{
+        display: flex;
+        align-items: center ;
+    }
+    .card{
+        flex: 1;
+        border-radius: 0.6rem;
+        background-color: #a09d9d;
+        padding: 3rem 1rem;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s;
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+    .card-header{
+        font-size: 3rem;
+        margin-bottom:2rem;
+        text-align: center;
+    }
+    .card-description{
+        padding: 0.4rem 0;
+        font-size:1.6rem;
+        text-align: justify;
+        margin-bottom: 5rem;
+    }
+    .card-btn{
+        align-self: center;
+        width: 80%;
+    }
+/*# blog about end here */
+
+/*/ blog post start here */
+
+    
+    .blog-post-heading{
+        margin-bottom: 5rem;
+    }
+    .blog-post{
+        width: 70%;
+        display: flex;
+        margin:1rem 0;
+        box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+        transition: transform 0.4s;
+    }
+    .blog-img{
+        width: 100%;
+        height: 100%;
+    }
+    .blog-post:hover{
+        transform: scale(1.1);
+    }
+    .blog-post-aside{
+        flex:1;
+    }
+    .blog-content{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem;
+        margin-left: 2rem;
+    }
+    .blog-heading{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .blog-sub-heading{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .blog-description{
+        font-size: 1.6rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    .blog-btn{
+        width: 30%;
+    }
+/*/ blog post end here */
+
+
+/*/ contact section start here */
+    #contact-section{
+        background: #4c4c4c;
+        min-height: 90vh;
+    }
+    #contact-form{
+        padding: 1rem;
+        box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+        margin: 1rem;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .form-control{
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-control label{
+        font-size: 1.6rem;
+        flex: 0.3;
+    }
+    input, textarea{
+        flex: 0.7;
+        width: 40rem;
+        font-size: 1.6rem;
+        padding: 2rem 1rem;
+        border:none;
+        border-radius: 0.6rem;
+    }
+    textarea{
+        resize:none;
+        height: 12vh;
+    }
+
+    .form-btn-field{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .contact-btn{
+        width: 30%
+    }
+/*/ contact section end here */
+
+
+/* footer section start here */
+
+    footer{
+        background-color: black;
+        padding: 1rem;
+        color:#fff;
+        min-height: 5vh;
+        display: flex;
+        justify-content: space-between;     
+        align-items: center;   
+    }    
+    .copyright-text{
+        font-size: 1.5rem;
+        color:#fff;
+    }
+    .footer-icon{
+        font-size: 2.5rem;
+    }
+/* footer section end here */
+
+
+
+
+
+
+/* responsive start here */
+
+@media (max-width: 992px) {
+    #blog-banner-section{
+        flex-direction: column;
+    }
+    #blog-banner-section article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .card-container{
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 768px){
+    html{
+        font-size: 55.5%
+    }
+    #blog-banner-section article{
+        width: 80%;
+    }
+    .card-container{
+        width: 80%;    
+    }
+    .blog-post{
+        flex-direction: column;
+        margin-bottom: 1rem;
+        width: 80%;
+    }
+    #contact-section{
+        min-height: auto;
+    }
+
+}
+@media (max-width: 600px){
+    html{
+        font-size: 48.5%;
+    }
+    header{
+        flex-direction: column;
+    }
+    #menu-icon{
+        display: block;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+    nav li{
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    #blog-banner-section{
+        min-height: auto;
+    }
+    #blog-banner-section article{
+        width: 90%;
+    }
+    .banner-img{
+        max-width: 100%;
+    }
+    #blog-about{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-container{
+        width: 90%;        
+    }
+    .archives.container-lists{
+        flex-wrap: wrap;
+    }
+    .blog-post{
+        width: 80%;
+    }
+    #contact-form{
+        width: 90%;
+    }
+    .form-control{
+        flex-direction: column;
+    }
+    .form-control label{
+        margin-bottom: 0.5rem;
+    }
+    .form-control input[type=text], textarea{
+        max-width: 90%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer ul{
+        display: flex;
+    }
+    
+}
+@media (max-width: 400px){
+
+}
+
+/* responsive end here */
+
